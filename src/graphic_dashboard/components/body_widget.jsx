@@ -55,6 +55,7 @@ export class BodyWidget extends React.Component {
                   'rgb(192,255,0)',
                 )
                 node.addInPort('In')
+                node.addOutPort('Out')
               } else if (data.type === 'diamond') {
                 node = new DiamondNodeModel(
                   'Node ' + (nodesCount + 1),
@@ -67,6 +68,7 @@ export class BodyWidget extends React.Component {
                   'Node ' + (nodesCount + 1),
                   'rgb(0,192,255)',
                 )
+                node.addInPort('In')
                 node.addOutPort('Out')
               }
               var points = this.props.app

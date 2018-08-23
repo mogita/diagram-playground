@@ -24,6 +24,7 @@ export class Application {
 
   newModel() {
     this.activeModel = new SRD.DiagramModel()
+    this.activeModel.setGridSize(25)
     this.diagramEngine.setDiagramModel(this.activeModel)
 
     //3-A) create a default node
